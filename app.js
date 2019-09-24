@@ -14,13 +14,9 @@ let getMainUrl = async ()=>{
         
         people.results.forEach(element =>{
             
-            characterName.innerHTML += `${element.name}<br>`;
-            imgCharacter.src = element.image;
-            
+            characterName.innerHTML += `${element.name}<br>${imgCharacter.src = element.image}<br>`;
             
         });
-        
-
         
         //characterName.innerText = people.results[0].name;
     }
