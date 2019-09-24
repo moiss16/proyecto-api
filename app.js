@@ -1,5 +1,6 @@
-const characterName = document.getElementById('character-name');
-const imgCharacter = document.getElementById('img-character');
+//const characterName = document.getElementById('character-name');
+//const imgCharacter = document.getElementById('img-character');
+const character = document.getElementById('character-container');
 const mainUrl = 'https://rickandmortyapi.com/api/';
 
 let getMainUrl = async ()=>{
@@ -13,12 +14,15 @@ let getMainUrl = async ()=>{
         console.log(people);
         
         people.results.forEach(element =>{
-            
-            characterName.innerHTML += `${element.name}<br>${imgCharacter.src = element.image}<br>`;
-            
+            const imgChar = element.image;
+            character.innerHTML += `
+                <div class="character">
+                    <h1>${element.name}</h1>
+                    <img src="${imgChar}" class="img-character">
+                </div>
+            `
         });
         
-        //characterName.innerText = people.results[0].name;
     }
     
     let getLocations = async ()=>{
