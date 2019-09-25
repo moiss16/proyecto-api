@@ -1,9 +1,59 @@
-.home-menu{
-    background-color: black;
-    font-size: 60px;
-    width: 100%;
-    height: 60px;
-    float: left;
-    margin: 0% 0%;
+.img-character{
+    height: 300px;
+    width: 300px;
 }
+nav ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    float: left;
 
+}
+nav ul li{
+    float: left;
+    list-style-type: none;
+    position: relative;
+}
+nav ul li :hover{
+    background-color: rgb(50, 50, 65);
+
+}
+nav ul li a{
+    font-size: 24px;
+    padding: 16px 14px;
+    display: block;
+    color: black;
+    text-decoration: none;
+
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 0px 6px 6px;
+    margin: 0ch;
+    padding: none;
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li {
+    width: 180px;
+    background-color:  white;
+    
+}
+nav ul li ul li :hover{
+    background-color: rgb(50, 50, 65); 
+   
+}
+nav ul li ul li a{
+    background-color: white;
+}
+nav p{
+    float: left;
+    font-size: 22px;
+    line-height: 45px;
+    padding: 10px 25px;
+    margin: 0px;
+
+}
