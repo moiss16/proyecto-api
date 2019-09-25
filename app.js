@@ -5,8 +5,8 @@ let getMainUrl = async ()=>{
     const respose = await fetch(mainUrl);
     const rickMorty = await respose.json();
     //console.log(rickMorty);
-    const {characters, locations, episodes} = rickMorty;
     
-    getEpisodes();
+    
+    
 }
 getMainUrl();

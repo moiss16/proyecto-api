@@ -1,3 +1,7 @@
+.img-char{
+    position: relative;
+    
+}
 .img-character{
     height: 300px;
     width: 300px;
