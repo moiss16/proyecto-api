@@ -18,8 +18,9 @@ let getMainUrl = async ()=>{
         //console.log(people);
         
         people.results.forEach(element =>{
-            const imgChar = element.image;
+            const imgChar = element.image
             character.innerHTML += `<img src="${imgChar}">`
+
         });
         people2.results.forEach(element =>{
             const imgChar = element.image;
