@@ -2,19 +2,24 @@ const character = document.getElementById('character-container');
 let getCharacters = async ()=>{
     const response = await fetch('https://rickandmortyapi.com/api/character/');
     const people = await response.json();
-    const response2 = await fetch(people.info.next);
+    /*const response2 = await fetch(people.info.next);
     const people2 = await response2.json();
     const response3 = await fetch(people2.info.next);
     const people3 = await response3.json();
     const response4 = await fetch(people3.info.next);
     const people4 = await response4.json();
-    //console.log(people);
+    console.log(people);*/
     
     people.results.forEach(element =>{
         const imgChar = element.image;
-        character.innerHTML += `<img src="${imgChar}" class="img-char">`
+        const namechar = element.name;
+        const statuschar = element.status;
+        const specieschar = element.species;
+        const genderchar = element.gender;  
+        character.innerHTML += `<img src="${imgChar}" class="img-char"> `
+        character.innerHTML += `<p> Name: ${namechar} </p> <p> Status: ${statuschar}</p> <p> Specie: ${specieschar}</p> <p> Gender: ${genderchar}</p> </div>`
     });
-    people2.results.forEach(element =>{
+    /*people2.results.forEach(element =>{
         const imgChar = element.image;
         character.innerHTML += `<img src="${imgChar}" class="img-char">`
     });
@@ -25,7 +30,7 @@ let getCharacters = async ()=>{
     people4.results.forEach(element =>{
         const imgChar = element.image;
         character.innerHTML += `<img src="${imgChar}" class="img-char">`
-    });
-    
+    });*/
+
 }
 getCharacters();
