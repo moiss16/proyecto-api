@@ -1,8 +1,8 @@
-<<<<<<< HEAD
 body{
     margin: 0%;
     padding: 0%;
 }
+
 .home-menu{
     font-size: 60px;
     width: 100%;
@@ -16,12 +16,10 @@ body{
     height: 40px;
     padding: 10px 10px 5px 10px;
 }
-=======
 .img-char{
     position: relative;
     
 }
->>>>>>> 54b7dc36690ef166cf8d41de4be2c7660766a7e4
 .img-character{
     height: 300px;
     width: 300px;
