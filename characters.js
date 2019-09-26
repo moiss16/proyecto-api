@@ -7,8 +7,8 @@ let getCharacters = async ()=>{
     const response3 = await fetch(people2.info.next);
     const people3 = await response3.json();
     const response4 = await fetch(people3.info.next);
-    const people4 = await response4.json();
-    console.log(people);*/
+    const people4 = await response4.json();*/
+    console.log(people);
     let flag = 0;
     people.results.some(element =>{
         
