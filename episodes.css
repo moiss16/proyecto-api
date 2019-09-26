@@ -1,0 +1,28 @@
+.cuadrito{
+    background-color: black;
+    margin: 40px 10px 20px 50px;
+    height: 400px;
+    width: 350px;
+    position: relative;
+    border-radius: 15px;
+    float: left;
+    
+}
+
+.texto{
+    
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 220px;
+    
+}
+
+.fotos-capitulos{
+    height: 170px;
+    width: 300px;
+    position: absolute;
+    left: 25px;
+    top: 20px;
+}
