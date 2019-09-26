@@ -15,10 +15,9 @@ let getCharacters = async ()=>{
     people.results.forEach(element => {
         const imgChar = element.image;
         flag++;
-        idChar [flag] = element.id;
         character.innerHTML += `
         <a href="infoChar/char${flag}.html">
-        <img src="${imgChar}" class="img-char" id="${idChar}">
+        <img src="${imgChar}" class="img-char">
         </a>`;
     });
        

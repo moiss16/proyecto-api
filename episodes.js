@@ -1,5 +1,9 @@
+const episodesInfo = document.getElementById('epi-container');
 let getEpisodes = async ()=>{
-    const response = await fetch(episodes);
+    const response = await fetch('https://rickandmortyapi.com/api/episode');
     const chapter = await response.json();
-    //console.log(chapter);
+    chapter.results.forEach(element =>{
+        episodesInfo.innerHTML += `<h1>${element.name}</h1>`;
+    })
 }
+getEpisodes();
