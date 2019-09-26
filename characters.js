@@ -1,4 +1,6 @@
 const character = document.getElementById('character-container');
+let idChar = new Array(20);
+
 let getCharacters = async ()=>{
     const response = await fetch('https://rickandmortyapi.com/api/character/');
     const people = await response.json();
@@ -8,19 +10,22 @@ let getCharacters = async ()=>{
     const people3 = await response3.json();
     const response4 = await fetch(people3.info.next);
     const people4 = await response4.json();*/
-    console.log(people);
+    //console.log(people);
     let flag = 0;
+    
     people.results.forEach(element => {
         const imgChar = element.image;
-        const nameChar = element.name;
+        /*const nameChar = element.name;
         const statusChar = element.status;
         const speciesChar = element.species;
-        const genderChar = element.gender;
+        const genderChar = element.gender;*/
+        idChar [flag] = element.id;
         flag++;
-        character.innerHTML += `<a href="infoChar/char${flag}.html"><img src="${imgChar}" class="img-char"></a>`;
-        
+        character.innerHTML += `
+        <a href="infoChar/char${flag}.html">
+        <img src="${imgChar}" class="img-char" id="${idChar}">
+        </a>`;
     });
-        
         
         
        
