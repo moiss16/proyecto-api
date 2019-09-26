@@ -8,7 +8,7 @@ let getcharacters = async() =>{
     //console.log(personaje.results[2]); 
     
     
-    const {image , name , status , species , gender } = personaje.results[0];
+    const {image , name , status , species , gender } = personaje.results[1];
     console.log(name , status, species, gender, image); 
     
     charimg.innerHTML += `<div class "foto-personaje"> <img src="${image}" class="image" height="400"> </div> ` ; 

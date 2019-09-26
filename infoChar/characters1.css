@@ -1,0 +1,30 @@
+.cuadro{
+    background-color: black;
+    background-image: url("../imagenes/portal.png");
+    background-repeat: no-repeat;
+    background-position: 40px;
+    background-size: 480px;
+    
+    top: 15%;
+    bottom: 5%;
+    left: 7%;
+    right: 7%;
+    height: 80%;
+    position: absolute;
+    border-radius: 15px;
+}
+.charimg{
+    position: relative;
+    top: 15%;
+    bottom: 15%;
+    border-radius: 50%;
+    left: 7%; 
+
+}
+.chartxt{
+    position: relative;
+    left: 50%;
+    bottom: 50%;
+    font-size: 32px;
+    color: white;
+}
