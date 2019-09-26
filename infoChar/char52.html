@@ -20,12 +20,11 @@
             <li><a href="../locations.html">Locations</a></li>
         </ul>
     </nav>
-    
+
     <div class="cuadro">
     <div id="charimg" class="charimg"></div>
     <div id="chartxt" class="chartxt"></div>
     </div>
-    
 
     
     <div id="id1">
@@ -34,11 +33,11 @@
             const chartxt = document.getElementById('chartxt'); 
 
             let getcharacters = async() =>{
-                const response = await fetch ('https://rickandmortyapi.com/api/character/');
+                const response = await fetch ('https://rickandmortyapi.com/api/character/?page=3');
                 const personaje = await response.json();
 
 
-                const {image , name , status , species , gender } = personaje.results[1];
+                const {image , name , status , species , gender } = personaje.results[11];
                 console.log(name , status, species, gender, image); 
 
                 charimg.innerHTML += `<div class "foto-personaje"> <img src="${image}" class="image" height="400"> </div> ` ; 
