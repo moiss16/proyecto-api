@@ -10,8 +10,7 @@ let getCharacters = async ()=>{
     const people4 = await response4.json();*/
     console.log(people);
     let flag = 0;
-    people.results.some(element =>{
-        
+    people.results.forEach(element => {
         const imgChar = element.image;
         const nameChar = element.name;
         const statusChar = element.status;
@@ -20,14 +19,15 @@ let getCharacters = async ()=>{
         flag++;
         character.innerHTML += `<a href="infoChar/char${flag}.html"><img src="${imgChar}" class="img-char"></a>`;
         
-        /*if(flag === 10){
-            return element === element;
-        }*/
+    });
+        
+        
+        
+       
         
         //character.innerHTML += `<p> Name: ${nameChar} </p> <p> Status: ${statusChar}</p> <p> Specie: ${speciesChar}</p> <p> Gender: ${genderChar}</p> </div>`
         
         
-    });
     /*people2.results.forEach(element =>{
         const imgChar = element.image;
         character.innerHTML += `<img src="${imgChar}" class="img-char">`
