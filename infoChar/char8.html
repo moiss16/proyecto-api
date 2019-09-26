@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>rick-sanchez</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="characters1.css">
+
+
+</head>
+<body>
+    <nav class="home-menu">
+            <p><a href="../index.html"> <img class="img-home" src="../imagenes/logo.png"> </a></p>
+            <ul>
+            <li><a href="../characters.html">Characters</a></li>
+            <li><a href="../episodes.html">Episodes</a></li>   
+            <li><a href="../locations.html">Locations</a></li>
+        </ul>
+    </nav>
+
+    <div class="cuadro">
+    <div id="charimg" class="charimg"></div>
+    <div id="chartxt" class="chartxt"></div>
+    </div>
+
+    
+    <div id="id1">
+        <script>
+            const charimg = document.getElementById('charimg'); 
+            const chartxt = document.getElementById('chartxt'); 
+
+            let getcharacters = async() =>{
+                const response = await fetch ('https://rickandmortyapi.com/api/character/');
+                const personaje = await response.json();
+
+
+                const {image , name , status , species , gender } = personaje.results[7];
+                console.log(name , status, species, gender, image); 
+
+                charimg.innerHTML += `<div class "foto-personaje"> <img src="${image}" class="image" height="400"> </div> ` ; 
+                chartxt.innerHTML += `<div class "texto-personaje"> <p> Name: ${name} </p> <p> Status: ${status}</p> <p> Specie: ${species}</p> <p> Gender: ${gender}</p> </div> `;
+
+            
+            }
+            getcharacters();
+        </script>
+    </div>
+    
+    
+</body>
+</html>
