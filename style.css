@@ -3,7 +3,29 @@ body{
     padding: 0%;
     background-color: #447385;
 }
-
+.home-portal{
+    position: relative;
+    left: 1000px;
+    bottom: 81px;
+    width: 700px;
+}
+.letras{
+    position: relative;
+    bottom: 650px;
+    right: 580px;
+}
+.api-img{
+    position: relative;
+    bottom: 300px;
+    right: 1079px;
+}
+.gif{
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    width: 800px;
+    height: 250px;
+}
 .home-menu{
     font-size: 60px;
     width: 100%;
