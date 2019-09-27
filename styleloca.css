@@ -1,7 +1,8 @@
 .img-loca{
     position: relative;
-    width: 1000px;
+    width: 1200px;
     height: 500px;
+    top: 40px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -9,12 +10,26 @@
 }
 .loca-info{
     font-size: 15px;
+    color: #35C9DD;
 }
 .tittle-info{
     font-size: 30px;
+    color: #35C9DD;
 }
 .loca-conta{
     position: relative;
-    left: 115px;
+    left: 500px;
     top: 150px;
+}
+.img-conta{
+    position: relative;
+    background-color: black;
+    bottom: 50px;
+    width: 1300px;
+    height: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    z-index: -1;
 }
