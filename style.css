@@ -2,29 +2,31 @@ body{
     margin: 0%;
     padding: 0%;
     background-color: #447385;
+    overflow:hidden;
 }
 .home-portal{
     position: relative;
     left: 730px;
-    bottom: 80px;
-    width: 400px;
-    height: 900px;
+    bottom: 110px;
+    width: 500px;
+    height: 830px;
 
 }
 .letras{
     position: relative;
-    bottom: 690px;
-    right: 300px;
+    bottom: 620px;
+    right: 400px;
     
 }
 .api-img{
     position: relative;
-    bottom: 370px;
-    right: 800px;
+    bottom: 815px;
+    left: 230px;
+    
 }
 .gif{
     position: absolute;
-    bottom: 325px;
+    bottom: 30px;
     left: 100px;
     width: 600px;
     height: 250px;
