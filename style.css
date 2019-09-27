@@ -5,25 +5,28 @@ body{
 }
 .home-portal{
     position: relative;
-    left: 1000px;
-    bottom: 81px;
-    width: 700px;
+    left: 730px;
+    bottom: 80px;
+    width: 400px;
+    height: 900px;
+
 }
 .letras{
     position: relative;
-    bottom: 650px;
-    right: 580px;
+    bottom: 690px;
+    right: 300px;
+    
 }
 .api-img{
     position: relative;
-    bottom: 300px;
-    right: 1079px;
+    bottom: 370px;
+    right: 800px;
 }
 .gif{
     position: absolute;
-    bottom: 100px;
-    left: 50px;
-    width: 800px;
+    bottom: 325px;
+    left: 100px;
+    width: 600px;
     height: 250px;
 }
 .home-menu{
