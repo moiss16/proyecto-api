@@ -2,19 +2,22 @@ const locationInfo = document.getElementById('location');
 let getLocaUrl = async () => {
     const response = await fetch('https://rickandmortyapi.com/api/location');
     const place = await response.json();
-    let flag = 0;
+    let flag = 1;
     place.results.forEach(element =>{
         locationInfo.innerHTML += `
-        <div class="loca-conta">
-            <p class="tittle-info">${element.name}<br></p>
-            <p class="loca-info">Dimension: ${element.dimension}<br>
-            Type: ${element.type}<br></p>
-        </div>
-        <div class="img-conta">
-        <img src="imagenes/The_Smith_Residence.webp" class="img-loca">
-        </div>
-        `;
+        <div class="container">
+            <img src="imagenes/${flag}.jpg" class="image">
+            <div class= "overlay overlayleft"> 
 
+
+            <p class="informacion">${element.name} </p>
+            <p class="informacion2">Dimension: ${element.dimension}     Type: ${element.type}  </p>
+            </div>
+        </div>  `;
+
+        flag ++; 
+    
+        
 
     })
     
