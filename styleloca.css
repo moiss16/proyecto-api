@@ -9,13 +9,15 @@
     z-index: -1;
 }
 .loca-info{
-    font-size: 15px;
-    color: #35C9DD;
+    font-size: 18px;
+    font-weight: bold;
+    color: #26aeb8;
     
 }
 .tittle-info{
-    font-size: 30px;
-    color: #35C9DD;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(24, 33, 63);
     
 }
 .loca-conta{
