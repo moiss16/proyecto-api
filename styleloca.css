@@ -2,7 +2,7 @@
     position: relative;
     width: 1200px;
     height: 500px;
-    top: 40px;
+    top: 120px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -15,22 +15,25 @@
     
 }
 .tittle-info{
+    position: relative;
+    top: 23px;
     font-size: 32px;
     font-weight: bold;
-    color: rgb(24, 33, 63);
+    color: rgb(50, 68, 129);
     
 }
 .loca-conta{
     position: relative;
     text-align: center;
-    top: 120px;
+    top: 10px;
+    
 }
 .img-conta{
     position: relative;
     background-color: black;
-    bottom: 50px;
+    bottom: 100px;
     width: 1300px;
-    height: 600px;
+    height: 675px;
     display: block;
     margin-left: auto;
     margin-right: auto;
