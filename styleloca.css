@@ -1,16 +1,20 @@
 .img-loca{
     position: relative;
-    width: 1200px;
-    height: 700px;
+    width: 1000px;
+    height: 500px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
+    z-index: -1;
 }
-
-.location{
-    position: absolute;
-    width: 1000px;
-    height: 400px;
-    text-align: center;
+.loca-info{
+    font-size: 15px;
+}
+.tittle-info{
+    font-size: 30px;
+}
+.loca-conta{
+    position: relative;
+    left: 115px;
+    top: 150px;
 }

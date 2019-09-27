@@ -5,11 +5,11 @@ let getLocaUrl = async () => {
     let flag = 0;
     place.results.forEach(element =>{
         locationInfo.innerHTML += `
-        <ul>
-            <h1>${element.name}</h1>
-            <li>Dimension: ${element.dimension}</li>
-            <li>Type: ${element.type}<br></li>
-        </ul>
+        <div class="loca-conta">
+            <p class="tittle-info">${element.name}<br></p>
+            <p class="loca-info">Dimension: ${element.dimension}<br>
+            Type: ${element.type}<br></p>
+        </div>
         <div class="img-conta">
         <img src="imagenes/The_Smith_Residence.webp" class="img-loca">
         </div>
