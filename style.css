@@ -15,19 +15,19 @@ body{
 .letras{
     position: relative;
     bottom: 620px;
-    right: 400px;
+    right: 450px;
     
 }
 .api-img{
     position: relative;
     bottom: 815px;
-    left: 230px;
+    left: 170px;
     
 }
 .gif{
-    position: absolute;
-    bottom: 30px;
-    left: 100px;
+    position: relative;
+    bottom: 760px;
+    right: 300px;
     width: 600px;
     height: 250px;
 }
