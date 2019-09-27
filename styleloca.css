@@ -11,15 +11,17 @@
 .loca-info{
     font-size: 15px;
     color: #35C9DD;
+    
 }
 .tittle-info{
     font-size: 30px;
     color: #35C9DD;
+    
 }
 .loca-conta{
     position: relative;
-    left: 500px;
-    top: 150px;
+    text-align: center;
+    top: 120px;
 }
 .img-conta{
     position: relative;
